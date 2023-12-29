@@ -1,0 +1,98 @@
+#emblem {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+#emblem:hover .angled-braces {
+    color: var(--accent-color-1);
+    transition: 0.75s;
+}
+
+#name-initial {
+    color: var(--pigment-green);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    background-color: var(--primary-background);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-content-text);
+    border-bottom: 1px solid var(--accent-color-2);
+    z-index: 1000;
+}
+
+nav #home-link {
+    color: var(--light-content-text);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5vw;
+    transition: right 0.3s ease;
+}
+
+nav li {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+li a {
+    color: var(--pigment-green);
+}
+
+li a:hover {
+    color: var(--accent-color-1);
+    transition: 0.75s;
+}
+
+.hide {
+    right: -100%;
+}
+
+@media screen and (max-width: 700px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+        margin-right: -10px;
+    }
+
+    .hamburger-lines {
+        display: block;
+        background-color: var(--light-content-text);
+        width: 35px;
+        height: 2px;
+    }
+
+    .lines-rotate {
+        background-color: var(--subtle-background);
+        border-radius: 5px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 71px;
+        right: 0;
+        background-color: var(--subtle-background);
+        padding: 35px 0;
+        border-top: 1px solid var(--accent-color-2);
+        border-bottom: 1px solid var(--accent-color-2);
+    }
+}

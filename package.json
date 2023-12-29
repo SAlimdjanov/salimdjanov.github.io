@@ -1,6 +1,7 @@
 {
   "name": "salimdjanov.github.io",
   "version": "0.1.0",
+  "homepage": "//salimdjanov.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -12,6 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "gh-pages -d build",
+    "deploy": "npm run build",
     "start": "react-scripts start src/index.jsx",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "react-router-dom": "^6.21.1"
   }
 }
