@@ -17,7 +17,7 @@
 }
 
 main {
-    background-color: var(--secondary-background);
+    background: radial-gradient(var(--secondary-background), #111317);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,12 +25,4 @@ main {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: var(--light-content-text);
-}
-
-footer {
-    padding: 25px 50px;
-    background-color: var(--primary-background);
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid var(--accent-color-2);
 }

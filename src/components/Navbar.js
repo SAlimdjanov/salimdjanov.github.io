@@ -1,7 +1,3 @@
-/**
- * Navbar.js
- */
-
 import "./Navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -19,10 +15,6 @@ const navLinks = [
         page: "About",
         url: "/about",
     },
-    {
-        page: "Contact",
-        url: "/contact",
-    },
 ];
 
 /**
@@ -30,7 +22,7 @@ const navLinks = [
  *
  * @param {*} object Object to be processed
  * @param {*} styleClass Styles to be applied
- * @param {function} clickHandler Handle Click Events
+ * @param {function} clickHandler Function to handle click events
  * @returns DOM Router links
  */
 function mapListLinks(object, styleClass, clickHandler) {

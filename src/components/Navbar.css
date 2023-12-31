@@ -45,7 +45,7 @@ nav li {
 }
 
 li a {
-    color: var(--pigment-green);
+    color: var(--light-content-text);
 }
 
 li a:hover {
@@ -91,7 +91,7 @@ li a:hover {
         top: 71px;
         right: 0;
         background-color: var(--subtle-background);
-        padding: 35px 0;
+        padding: 20px 0;
         border-top: 1px solid var(--accent-color-2);
         border-bottom: 1px solid var(--accent-color-2);
     }
