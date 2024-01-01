@@ -1,5 +1,6 @@
 #emblem {
     font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -40,7 +41,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -57,7 +58,11 @@ li a:hover {
     right: -100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) {
+    #emblem {
+        font-size: 35px;
+    }
+
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -79,7 +84,7 @@ li a:hover {
     }
 
     nav {
-        padding: 15px 20px;
+        padding: 15px 30px;
     }
 
     nav ul {
@@ -94,5 +99,11 @@ li a:hover {
         padding: 20px 0;
         border-top: 1px solid var(--accent-color-2);
         border-bottom: 1px solid var(--accent-color-2);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #emblem {
+        font-size: 30px;
     }
 }

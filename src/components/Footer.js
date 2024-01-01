@@ -1,30 +1,6 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-    faGithub,
-    faLinkedin,
-    faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-
-const socials = [
-    {
-        icon: faGithub,
-        url: "https://github.com/SAlimdjanov",
-    },
-    {
-        icon: faLinkedin,
-        url: "https://www.linkedin.com/in/salimdjanov/",
-    },
-    {
-        icon: faEnvelope,
-        url: "mailto: alimdjanov.ss@gmail.com",
-    },
-    {
-        icon: faTwitter,
-        url: "https://twitter.com/shonasirdev",
-    },
-];
+import socials from "../content/FooterSocials";
 
 function Footer() {
     return (

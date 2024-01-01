@@ -1,0 +1,50 @@
+#name {
+    color: var(--pigment-green);
+    font-size: calc(55px + 2vmin);
+}
+
+#title {
+    color: var(--accent-color-2);
+    font-size: calc(20px + 2vmin);
+}
+
+#brief {
+    padding-top: 5vh;
+    font-size: calc(9px + 2vmin);
+}
+
+@media screen and (max-width: 900px) {
+    #name {
+        font-size: calc(50px + 2vmin);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #name {
+        font-size: calc(45px + 2vmin);
+    }
+
+    #title {
+        padding-top: 1vh;
+    }
+
+    #brief {
+        padding-top: 4vh;
+        font-size: calc(10px + 2.2vmin);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #name {
+        font-size: calc(38px + 2vmin);
+    }
+
+    #title {
+        font-size: calc(16px + 2vmin);
+    }
+
+    #brief {
+        padding-top: 4vh;
+        font-size: calc(9px + 2vmin);
+    }
+}

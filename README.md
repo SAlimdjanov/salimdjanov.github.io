@@ -1,3 +1,7 @@
-# Portfolio
+# Personal Website
 
-My personal portfolio made with React. See it live [here](https://salimdjanov.github.io).
+This is the repository for my personal website. It is a single page application made with React. See it live [here](https://salimdjanov.github.io).
+
+### Screenshots
+
+![](./screenshots/Home.png)

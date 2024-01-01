@@ -1,21 +1,7 @@
 import "./Navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-const navLinks = [
-    {
-        page: "Projects",
-        url: "/my-projects",
-    },
-    {
-        page: "Experience",
-        url: "/experience",
-    },
-    {
-        page: "About",
-        url: "/about",
-    },
-];
+import navLinks from "../content/NavLinks";
 
 /**
  * Processes Navbar content
@@ -35,7 +21,7 @@ function mapListLinks(object, styleClass, clickHandler) {
                     key={index}
                     onClick={clickHandler}
                 >
-                    {item.page}
+                    {item.component}
                 </Link>
             </li>
         );
