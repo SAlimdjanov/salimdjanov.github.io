@@ -8,7 +8,12 @@ function Footer() {
             <section className="footer-socials">
                 {socials.map((social, index) => {
                     return (
-                        <a href={social.url} key={index}>
+                        <a
+                            href={social.url}
+                            key={index}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FontAwesomeIcon icon={social.icon} size="2x" />
                         </a>
                     );

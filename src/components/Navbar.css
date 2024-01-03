@@ -6,7 +6,7 @@
 
 #emblem:hover .angled-braces {
     color: var(--accent-color-1);
-    transition: 0.75s;
+    transition: 0.3s ease;
 }
 
 #name-initial {
@@ -43,15 +43,6 @@ nav ul {
 nav li {
     font-size: 1.3rem;
     font-weight: bold;
-}
-
-li a {
-    color: var(--light-content-text);
-}
-
-li a:hover {
-    color: var(--accent-color-1);
-    transition: 0.75s;
 }
 
 .hide {

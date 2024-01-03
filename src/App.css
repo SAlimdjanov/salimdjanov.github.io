@@ -28,6 +28,15 @@ main {
     color: var(--light-content-text);
 }
 
+a {
+    color: var(--light-content-text);
+}
+
+a:hover {
+    color: var(--accent-color-1);
+    transition: color 0.3s ease;
+}
+
 button {
     margin-top: 5vh;
     color: var(--light-content-text);
@@ -42,6 +51,7 @@ button {
 }
 
 button:hover {
+    cursor: pointer;
     color: var(--accent-color-1);
     background-color: var(--subtle-background);
 }
