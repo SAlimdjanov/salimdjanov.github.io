@@ -1,0 +1,114 @@
+#about-title {
+    font-size: calc(18px + 2vmin);
+    color: var(--pigment-green);
+}
+
+#about {
+    margin-top: 5vh;
+    display: flex;
+    gap: 6%;
+}
+
+#about h2 {
+    color: var(--accent-color-2);
+}
+
+#who-i-am,
+#skills {
+    width: 47%;
+}
+
+#who-i-am h2,
+#who-i-am p,
+#skills h2 {
+    text-align: left;
+}
+
+#who-i-am p {
+    margin-top: 2vh;
+}
+
+#who-i-am a {
+    color: var(--accent-color-1);
+}
+
+#who-i-am a:hover {
+    text-decoration: underline;
+}
+
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 0.5vw;
+    justify-items: left;
+    align-items: center;
+}
+
+.skill-row div {
+    text-align: left;
+}
+
+.skill-row div:nth-child(1) {
+    width: 5vw;
+}
+
+.skill-cell {
+    border-left: 2px solid var(--accent-color-1);
+    padding-left: 0.5vw;
+}
+
+.skill-style {
+    display: inline-block;
+    margin: 4px 7px 4px 7px;
+    padding: 8px;
+    border: 2px solid var(--pigment-green);
+    background-color: var(--subtle-background);
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 985px) {
+    #skills-container {
+        margin-top: 2vh;
+    }
+
+    .skill-row {
+        grid-template-columns: 1fr;
+        margin-bottom: 1vh;
+    }
+
+    .skill-row div:nth-child(1) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #about {
+        margin-top: 3vh;
+        flex-direction: column;
+        gap: 6%;
+    }
+
+    #who-i-am,
+    #skills {
+        width: 100%;
+    }
+
+    #who-i-am {
+        margin-bottom: 3vh;
+    }
+
+    #skills {
+        margin-top: 1vh;
+    }
+
+    #skills-container {
+        margin-top: 2vh;
+    }
+}

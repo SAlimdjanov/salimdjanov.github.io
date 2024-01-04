@@ -1,6 +1,6 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import socials from "../content/FooterSocials";
+import socials from "../content/Socials";
 
 function Footer() {
     return (

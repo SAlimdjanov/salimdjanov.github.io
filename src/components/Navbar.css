@@ -1,6 +1,6 @@
 #emblem {
     font-family: "Courier New", Courier, monospace;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -42,7 +42,6 @@ nav ul {
 
 nav li {
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 .hide {
@@ -51,7 +50,7 @@ nav li {
 
 @media screen and (max-width: 550px) {
     #emblem {
-        font-size: 35px;
+        font-size: 34px;
     }
 
     .hamburger-menu {

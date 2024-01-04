@@ -6,9 +6,10 @@
 
 const intro = {
     myName: "Shonasir Alimdjanov",
-    title: "Full-Stack Developer",
-    brief: `A Full-Stack Developer with enthusiasm for crafting innovative web applications. I
-    leverage my expertise to create seamless and engaging user experiences.`,
+    title: "Software Engineer",
+    brief: `Passionate about developing cutting-edge solutions. I leverage my expertise to design
+    and implement robust software, ensuring optimal functionality and an exceptional user 
+    experience.`,
 };
 
 export default intro;
