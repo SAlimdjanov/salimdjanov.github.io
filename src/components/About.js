@@ -1,5 +1,5 @@
 import "./About.css";
-import navLinks from "../content/NavLinks";
+import navLinks from "../content/ComponentNames";
 import socials from "../content/Socials";
 import { whoIAm, skills } from "../content/AboutContent";
 

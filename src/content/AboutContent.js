@@ -5,29 +5,36 @@
  */
 
 import { Link } from "react-router-dom";
+import componentNames from "../content/ComponentNames";
+import itemToPath from "../helpers/ConvertToPath";
 
 /**
- * Processes content for subsection "Who I am" in the 'About' component
+ * Processes content for subsection "Who I am" in the "About" component
  *
- * @param {String} componentLinks object containing in-app component links
- * @param {String} socials object containing social links
+ * @param {String} links array containing in-app component names
+ * @param {String} socials Object containing social links
  * @returns {Object} Object containing text and relevant social links
  */
-const whoIAm = (componentLinks, socials) => {
-    const projectWork = <Link to={componentLinks[0].url}>project work</Link>;
-    const experience = <Link to={componentLinks[2].url}>experience</Link>;
+const whoIAm = (links, socials) => {
+    const projectWork = (
+        <Link to={itemToPath(componentNames, "Projects")}>project work</Link>
+    );
+    const experience = (
+        <Link to={itemToPath(componentNames, "Experience")}>experience</Link>
+    );
+
     const twitter = (
-        <a href={socials[3].url} target="_blank" rel="noreferrer">
+        <a href={socials["twitter"].url} target="_blank" rel="noreferrer">
             Twitter/X
         </a>
     );
     const linkedin = (
-        <a href={socials[1].url} target="_blank" rel="noreferrer">
+        <a href={socials["linkedin"].url} target="_blank" rel="noreferrer">
             LinkedIn
         </a>
     );
     const email = (
-        <a href={socials[2].url} target="_blank" rel="noreferrer">
+        <a href={socials["email"].url} target="_blank" rel="noreferrer">
             email
         </a>
     );

@@ -1,27 +1,28 @@
-import "./Navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import navLinks from "../content/NavLinks";
+import "./Navbar.css";
+import componentNames from "../content/ComponentNames";
+import itemToPath from "../helpers/ConvertToPath";
 
 /**
  * Processes Navbar content
  *
- * @param {*} object Object to be processed
- * @param {*} styleClass Styles to be applied
+ * @param {Array} array Object to be processed
+ * @param {String} styleClass Styles to be applied
  * @param {function} clickHandler Function to handle click events
  * @returns DOM Router links
  */
-function mapListLinks(object, styleClass, clickHandler) {
-    const listItems = object.map((item, index) => {
+function mapListLinks(array, styleClass, clickHandler) {
+    const listItems = array.map((item, index) => {
         return (
             <li key={index}>
                 <Link
                     className={styleClass}
-                    to={item.url}
+                    to={itemToPath(componentNames, item)}
                     key={index}
                     onClick={clickHandler}
                 >
-                    {item.component}
+                    {item}
                 </Link>
             </li>
         );
@@ -63,7 +64,7 @@ function Navbar() {
             </div>
 
             <ul id="nav-links" className={isNavbarHidden ? "hide" : ""}>
-                {mapListLinks(navLinks, "links", handleLinkClick)}
+                {mapListLinks(componentNames, "links", handleLinkClick)}
             </ul>
         </nav>
     );
