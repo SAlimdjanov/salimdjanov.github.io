@@ -1,0 +1,195 @@
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro h1 {
+    font-size: calc(18px + 2vmin);
+    color: var(--pigment-green);
+}
+
+#intro p {
+    width: 80%;
+    text-align: center;
+    font-size: calc(10px + 1vmin);
+}
+
+#experience {
+    margin-top: 5vh;
+    display: flex;
+    gap: 6%;
+}
+
+#intro p,
+#experience p {
+    margin-top: 2vh;
+}
+
+#experience h2 {
+    color: var(--accent-color-2);
+}
+
+#education,
+#employment {
+    width: 47%;
+}
+
+#education h2,
+#employment h2 {
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+#experience h5 {
+    font-size: calc(6.5px + 1vmin);
+    margin-top: 2vh;
+    text-decoration: underline;
+}
+
+#education-experience {
+    list-style: none;
+}
+
+#education-experience li {
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+.title-and-term {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: var(--pigment-green);
+}
+
+.term {
+    font-size: calc(5px + 1vmin);
+    white-space: nowrap;
+}
+
+.org-and-location {
+    margin-top: 0.5vh;
+    font-size: calc(7px + 1vmin);
+    color: var(--accent-color-1);
+}
+
+.bulleted-list {
+    padding-top: 1vh;
+    padding-left: 2vw;
+    list-style: none;
+}
+
+.bulleted-list li:before {
+    content: "\2022";
+    color: var(--accent-color-1);
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+.job-responsibilities li {
+    margin-top: 0.5vh;
+}
+
+@media screen and (max-width: 950px) {
+    .title-and-term {
+        flex-direction: column;
+        gap: 0.25vh;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #experience {
+        margin-top: 3vh;
+        flex-direction: column;
+        gap: 6%;
+    }
+
+    #education,
+    #employment {
+        width: 100%;
+    }
+
+    #education {
+        margin-bottom: 3vh;
+    }
+
+    .title-and-term {
+        flex-direction: row;
+        gap: 2vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #experience h5 {
+        font-size: calc(6.5px + 1.5vmin);
+    }
+
+    .bulleted-list {
+        padding-left: 3vw;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #intro p {
+        font-size: calc(12px + 1vmin);
+    }
+
+    #experience h5 {
+        font-size: calc(6.5px + 1.8vmin);
+    }
+
+    .title-and-term {
+        flex-direction: column;
+        gap: 0.25vh;
+        align-items: flex-start;
+    }
+
+    .term {
+        font-size: calc(5px + 1.5vmin);
+    }
+
+    .org-and-location {
+        font-size: calc(7px + 1.4vmin);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #experience h5 {
+        font-size: calc(6.5px + 2vmin);
+    }
+
+    .term {
+        font-size: calc(5px + 1.6vmin);
+    }
+
+    .org-and-location {
+        font-size: calc(7px + 1.5vmin);
+    }
+
+    .bulleted-list {
+        padding-left: 4vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .term {
+        font-size: calc(5px + 2vmin);
+    }
+
+    .org-and-location {
+        font-size: calc(7px + 1.9vmin);
+    }
+
+    .bulleted-list {
+        padding-left: 5vw;
+    }
+}

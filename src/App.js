@@ -7,7 +7,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import componentNames from "./content/ComponentNames";
-import convertToPath from "./helpers/ConvertToPath";
+import itemToPath from "./helpers/ConvertToPath";
 
 function App() {
     return (
@@ -20,15 +20,15 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route
-                            path={convertToPath(componentNames, "Projects")}
+                            path={itemToPath(componentNames, "Projects")}
                             element={<Projects />}
                         />
                         <Route
-                            path={convertToPath(componentNames, "About")}
+                            path={itemToPath(componentNames, "About")}
                             element={<About />}
                         />
                         <Route
-                            path={convertToPath(componentNames, "Experience")}
+                            path={itemToPath(componentNames, "Experience")}
                             element={<Experience />}
                         />
                     </Routes>

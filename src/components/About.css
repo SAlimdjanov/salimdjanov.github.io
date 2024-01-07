@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
     #about {
         margin-top: 3vh;
         flex-direction: column;

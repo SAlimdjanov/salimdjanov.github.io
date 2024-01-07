@@ -11,6 +11,7 @@
 #brief {
     padding-top: 5vh;
     font-size: calc(9px + 2vmin);
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {

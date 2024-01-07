@@ -60,7 +60,7 @@ function About() {
 
     return (
         <>
-            <h2 id="about-title">About</h2>
+            <h1 id="about-title">About</h1>
             <section id="about">
                 <article id="who-i-am">
                     <h2>{aboutContent.title}</h2>

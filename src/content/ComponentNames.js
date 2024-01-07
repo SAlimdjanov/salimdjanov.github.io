@@ -4,6 +4,6 @@
  * Contains component names for use elsewhere in the project
  */
 
-const componentNames = ["Projects", "Experience", "About"];
+const componentNames = ["About", "Projects", "Experience"];
 
 export default componentNames;

@@ -34,7 +34,9 @@ function Footer() {
                 {generateIconLinks(socials)}
             </section>
             <section className="copyright-container">
-                <p className="copyright-text">Copyright &copy; 2023-2024</p>
+                <p className="copyright-text">
+                    Copyright &copy; 2023-2024 | Shonasir Alimdjanov
+                </p>
             </section>
         </>
     );
