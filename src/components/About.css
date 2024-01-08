@@ -51,6 +51,7 @@
 }
 
 .skill-row div {
+    color: var(--accent-color-3);
     text-align: left;
 }
 
@@ -67,6 +68,7 @@
     display: inline-block;
     margin: 4px 7px 4px 7px;
     padding: 8px;
+    color: var(--light-content-text);
     border: 2px solid var(--pigment-green);
     background-color: var(--subtle-background);
     border-radius: 10px;

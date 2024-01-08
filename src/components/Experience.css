@@ -12,7 +12,6 @@
 #intro p {
     width: 80%;
     text-align: center;
-    font-size: calc(10px + 1vmin);
 }
 
 #experience {
@@ -68,7 +67,9 @@
 }
 
 .term {
+    color: var(--accent-color-3);
     font-size: calc(5px + 1vmin);
+    font-weight: normal;
     white-space: nowrap;
 }
 
@@ -139,10 +140,6 @@
 }
 
 @media screen and (max-width: 560px) {
-    #intro p {
-        font-size: calc(12px + 1vmin);
-    }
-
     #experience h5 {
         font-size: calc(6.5px + 1.8vmin);
     }
@@ -168,6 +165,7 @@
     }
 
     .term {
+        margin-top: 0.5vh;
         font-size: calc(5px + 1.6vmin);
     }
 
@@ -181,6 +179,10 @@
 }
 
 @media screen and (max-width: 370px) {
+    #intro p {
+        font-size: calc(10px + 1.6vmin);
+    }
+
     .term {
         font-size: calc(5px + 2vmin);
     }
@@ -191,5 +193,10 @@
 
     .bulleted-list {
         padding-left: 5vw;
+    }
+
+    #education-experience,
+    .bulleted-list li {
+        font-size: calc(10px + 1.6vmin);
     }
 }

@@ -54,13 +54,25 @@ function Navbar() {
 
             <div
                 className={`hamburger-menu ${
-                    isNavbarHidden ? "" : "lines-rotate"
+                    isNavbarHidden ? "" : "menu-selected"
                 }`}
                 onClick={toggleNavbar}
             >
-                <span className="hamburger-lines"></span>
-                <span className="hamburger-lines"></span>
-                <span className="hamburger-lines"></span>
+                <span
+                    className={`hamburger-lines ${
+                        isNavbarHidden ? "" : "line-rotate-down"
+                    }`}
+                ></span>
+                <span
+                    className={`hamburger-lines ${
+                        isNavbarHidden ? "" : "invisible"
+                    }`}
+                ></span>
+                <span
+                    className={`hamburger-lines ${
+                        isNavbarHidden ? "" : "line-rotate-up"
+                    }`}
+                ></span>
             </div>
 
             <ul id="nav-links" className={isNavbarHidden ? "hide" : ""}>
