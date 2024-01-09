@@ -25,18 +25,15 @@ const education = {
     relevantExperiences: [
         `Simulated and visualized various physical phenomena using Python libraries such as
          Matplotlib and NumPy. These scripts were crucial in conveying my findings in laboratories
-         and calculating design parameters for my final year project, which I will describe next.`,
-        `I was a member of a three-man team that designed and assembled automated window blinds.
-         These shutters were remote controllable and generated reserve power through mini solar
-         panels mounted on each slat. This project was appealing to the market in two ways: It
-         can be integrated with smart home ecosystems and utilizes solar energy. I carried out
-         the procurement and eventual assembly of the electrical system, which contained a stepper
-         motor, battery system, limit switches, and an ESP32 microcontroller. I led the design of
-         the embedded software, which was written in the Arduino Framework. My teammates handled
-         the structural design and development of a web app that enabled remote control of the
-         blinds. The app was written in JavaScript and communicated with the microcontroller via
-         websockets upon user input. Users were able to open, close, and orient the slats to the
-         optimum angle for charging the batteries.`,
+         and calculating design parameters for my final year project, which is described below:`,
+        `I was a member of a three-person team in designing and assembling automated window blinds.
+         These blinds were remotely controllable and featured mini solar panels on each slat for
+         reserve power. I managed the procurement and assembly of the embedded system, including a
+         stepper motor, battery system, limit switches, and an ESP32 microcontroller. I also
+         designed the embedded software using the Arduino Framework. My teammates handled structural
+         design, and they developed a web app in JavaScript for remote control. The app communicated
+         with the microcontroller via websockets, allowing users to open, close, and orient the slats
+         for optimal solar charging.`,
     ],
 };
 

@@ -1,7 +1,7 @@
 import "./About.css";
 import navLinks from "../content/ComponentNames";
 import socials from "../content/Socials";
-import { whoIAm, skills } from "../content/AboutContent";
+import { generateMeContent, skills } from "../content/AboutContent";
 
 /**
  * Generates span elements for skills
@@ -56,20 +56,20 @@ function generateRows(skillObj, rowStyles, skillCellstyles, skillStyles) {
 }
 
 function About() {
-    const aboutContent = whoIAm(navLinks, socials);
+    const aboutContent = generateMeContent(navLinks, socials);
 
     return (
         <>
             <h1 id="about-title">About</h1>
             <section id="about">
-                <article id="who-i-am">
-                    <h2>{aboutContent.title}</h2>
+                <article id="me">
+                    <h2>About Me</h2>
                     <p>{aboutContent.background}</p>
                     <p>{aboutContent.socialEngagement}</p>
                     <p>{aboutContent.status}</p>
                 </article>
                 <article id="skills">
-                    <h2>Skills</h2>
+                    <h2>My Skills</h2>
                     <div id="skills-container">
                         {generateRows(
                             skills,

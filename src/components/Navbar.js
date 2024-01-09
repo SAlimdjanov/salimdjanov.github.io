@@ -8,16 +8,14 @@ import itemToPath from "../helpers/ConvertToPath";
  * Processes Navbar content
  *
  * @param {Array} array Object to be processed
- * @param {String} styleClass Styles to be applied
  * @param {function} clickHandler Function to handle click events
  * @returns DOM Router links
  */
-function mapListLinks(array, styleClass, clickHandler) {
+function mapListLinks(array, clickHandler) {
     const listItems = array.map((item, index) => {
         return (
             <li key={index}>
                 <Link
-                    className={styleClass}
                     to={itemToPath(componentNames, item)}
                     key={index}
                     onClick={clickHandler}
@@ -76,7 +74,7 @@ function Navbar() {
             </div>
 
             <ul id="nav-links" className={isNavbarHidden ? "hide" : ""}>
-                {mapListLinks(componentNames, "links", handleLinkClick)}
+                {mapListLinks(componentNames, handleLinkClick)}
             </ul>
         </nav>
     );

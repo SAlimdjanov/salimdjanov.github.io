@@ -13,26 +13,26 @@
     color: var(--accent-color-2);
 }
 
-#who-i-am,
+#me,
 #skills {
     width: 47%;
 }
 
-#who-i-am h2,
-#who-i-am p,
+#me h2,
+#me p,
 #skills h2 {
     text-align: left;
 }
 
-#who-i-am p {
+#me p {
     margin-top: 2vh;
 }
 
-#who-i-am a {
+#me a {
     color: var(--accent-color-1);
 }
 
-#who-i-am a:hover {
+#me a:hover {
     text-decoration: underline;
 }
 
@@ -97,12 +97,12 @@
         gap: 6%;
     }
 
-    #who-i-am,
+    #me,
     #skills {
         width: 100%;
     }
 
-    #who-i-am {
+    #me {
         margin-bottom: 3vh;
     }
 

@@ -7,6 +7,7 @@
     --accent-color-1: #3498db;
     --accent-color-2: #a72929;
     --accent-color-3: #778899;
+    --accent-color-4: #c1c1c1;
 }
 
 * {
@@ -30,7 +31,7 @@ main {
 
 a {
     font-weight: bold;
-    color: var(--light-content-text);
+    color: var(--accent-color-4);
 }
 
 a:hover {
@@ -40,7 +41,7 @@ a:hover {
 
 button {
     margin-top: 5vh;
-    color: var(--light-content-text);
+    color: var(--accent-color-4);
     background-color: var(--primary-background);
     height: 7vh;
     width: 15vw;

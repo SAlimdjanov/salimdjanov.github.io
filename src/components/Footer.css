@@ -18,7 +18,7 @@ footer {
     gap: 4vw;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 680px) {
     footer {
         display: flex;
         flex-direction: column;

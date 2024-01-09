@@ -9,13 +9,13 @@ import componentNames from "../content/ComponentNames";
 import itemToPath from "../helpers/ConvertToPath";
 
 /**
- * Processes content for subsection "Who I am" in the "About" component
+ * Processes content for subsection "Me" in the "About" component
  *
  * @param {String} links array containing in-app component names
  * @param {String} socials Object containing social links
  * @returns {Object} Object containing text and relevant social links
  */
-const whoIAm = (links, socials) => {
+const generateMeContent = (links, socials) => {
     const projectWork = (
         <Link to={itemToPath(componentNames, "Projects")}>project work</Link>
     );
@@ -40,7 +40,6 @@ const whoIAm = (links, socials) => {
     );
 
     const outputElements = {
-        title: "Who I am",
         background: (
             <>
                 I am a passionate Software Engineer with a diverse skillset that
@@ -86,4 +85,4 @@ const skills = {
     Miscellaneous: ["UX/UI Design", "Bash (Unix Shell)"],
 };
 
-export { whoIAm, skills };
+export { generateMeContent, skills };
