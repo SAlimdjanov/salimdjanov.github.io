@@ -35,7 +35,7 @@ function Footer() {
             </section>
             <section className="copyright-container">
                 <p className="copyright-text">
-                    Copyright &copy; 2023-2024 | Shonasir Alimdjanov
+                    Copyright &copy; 2023-2024 | Made by Shonasir Alimdjanov
                 </p>
             </section>
         </>

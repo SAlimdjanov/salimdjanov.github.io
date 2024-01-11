@@ -14,14 +14,6 @@ const education = {
     school: "McMaster University",
     term: "Sept. 2018 - Apr. 2023",
     location: "Hamilton, Ontario, Canada",
-    relevantCourses: [
-        "Vector Calculus & Integral Theorems",
-        "Linear Algebra",
-        "Computational Physics",
-        "Probability & Statistics",
-        "Numerical Methods for Engineers",
-        "Embedding & Programming Microcontrollers",
-    ],
     relevantExperiences: [
         `Simulated and visualized various physical phenomena using Python libraries such as
          Matplotlib and NumPy. These scripts were crucial in conveying my findings in laboratories

@@ -67,7 +67,7 @@
 }
 
 .term {
-    color: var(--accent-color-3);
+    color: var(--accent-color-4);
     font-size: calc(5px + 1vmin);
     font-weight: normal;
     white-space: nowrap;
@@ -76,7 +76,7 @@
 .org-and-location {
     margin-top: 0.5vh;
     font-size: calc(7px + 1vmin);
-    color: var(--accent-color-1);
+    color: var(--accent-color-3);
 }
 
 .bulleted-list {

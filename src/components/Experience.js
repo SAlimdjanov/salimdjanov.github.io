@@ -20,10 +20,6 @@ function Experience() {
                         <span>{education.school} </span>-
                         <span> {education.location} </span>
                     </h4>
-                    <h5>Relevant Courses</h5>
-                    <ul className="bulleted-list">
-                        {generateListElements(education.relevantCourses)}
-                    </ul>
                     <h5>Relevant Experience</h5>
                     <ul id="education-experience">
                         {generateListElements(education.relevantExperiences)}
