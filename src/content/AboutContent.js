@@ -15,7 +15,7 @@ import itemToPath from "../helpers/ConvertToPath";
  * @param {String} socials Object containing social links
  * @returns {Object} Object containing text and relevant social links
  */
-const generateMeContent = (links, socials) => {
+const generateMeContent = (socials) => {
     const projectWork = (
         <Link to={itemToPath(componentNames, "Projects")}>project work</Link>
     );

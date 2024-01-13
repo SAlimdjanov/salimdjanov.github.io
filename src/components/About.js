@@ -1,5 +1,4 @@
 import "./About.css";
-import navLinks from "../content/ComponentNames";
 import socials from "../content/Socials";
 import { generateMeContent, skills } from "../content/AboutContent";
 
@@ -56,7 +55,7 @@ function generateRows(skillObj, rowStyles, skillCellstyles, skillStyles) {
 }
 
 function About() {
-    const aboutContent = generateMeContent(navLinks, socials);
+    const aboutContent = generateMeContent(socials);
 
     return (
         <>

@@ -17,6 +17,11 @@
     text-decoration: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 main {
     background: radial-gradient(var(--secondary-background), #0c0d0f);
     width: 100vw;

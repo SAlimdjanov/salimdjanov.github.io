@@ -41,9 +41,9 @@ const employment = {
             `Developed C++ modules tailored for Arduino-based ESP32 microcontrollers, focusing on
              robot movement functionalities and seamless integration with Human-Machine Interfaces
              (HMIs)`,
-            `Executed debugging activities and crafted units for diverse features, conducting
+            `Executed debugging activities and crafted unit tests for diverse features, conducting
              comprehensive hardware tests with multiple HMIs`,
-            `Contributed to code reviews led by Engineering Management and collaborated with external
+            `Contributed to design reviews led by Engineering Management and collaborated with external
              firms to validate compliance with project specifications and industry standards`,
         ],
     },

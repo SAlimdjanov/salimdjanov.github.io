@@ -7,7 +7,11 @@ import itemToPath from "../helpers/ConvertToPath";
 function Home() {
     return (
         <>
-            <h1 id="name">{intro.myName}</h1>
+            <h1 id="name">
+                Hi, I'm <span className="angled-brackets">&lt;</span>
+                <span id="first-name">Shonasir</span>
+                <span className="angled-brackets">/&gt;</span>
+            </h1>
             <h2 id="title">{intro.title}</h2>
             <p id="brief">{intro.brief}</p>
             <Link to={itemToPath(componentNames, "Projects")}>

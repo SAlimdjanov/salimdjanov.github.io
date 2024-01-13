@@ -1,9 +1,9 @@
 /**
- * NavLinks.js
+ * ComponentNames.js
  *
  * Contains component names for use elsewhere in the project
  */
 
-const componentNames = ["About", "Projects", "Experience"];
+const componentNames = ["Projects", "About", "Experience"];
 
 export default componentNames;

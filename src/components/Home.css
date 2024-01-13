@@ -1,6 +1,6 @@
 #name {
-    color: var(--pigment-green);
-    font-size: calc(55px + 2vmin);
+    color: var(--accent-color-3);
+    font-size: calc(43px + 2vmin);
     text-align: center;
 }
 
@@ -10,9 +10,26 @@
 }
 
 #brief {
-    padding-top: 5vh;
-    font-size: calc(9px + 2vmin);
+    width: 80%;
+    padding-top: 3vh;
+    font-size: calc(9px + 1.5vmin);
     text-align: center;
+}
+
+#first-name {
+    font-size: calc(50px + 2vmin);
+    color: var(--pigment-green);
+}
+
+#first-name,
+.angled-brackets {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.angled-brackets {
+    font-size: calc(52px + 2vmin);
+    font-weight: bold;
+    color: var(--light-content-text);
 }
 
 @media screen and (max-width: 900px) {
@@ -21,9 +38,15 @@
     }
 }
 
+@media screen and (max-width: 760px) {
+    #name {
+        line-height: 90%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     #name {
-        font-size: calc(45px + 2vmin);
+        font-size: calc(42px + 2vmin);
     }
 
     #title {
@@ -34,11 +57,19 @@
         padding-top: 4vh;
         font-size: calc(10px + 2.2vmin);
     }
+
+    #first-name {
+        font-size: calc(45px + 1vmin);
+    }
+
+    .angled-brackets {
+        font-size: calc(42px + 2vmin);
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     #name {
-        font-size: calc(38px + 2vmin);
+        font-size: calc(28px + 2vmin);
     }
 
     #title {
@@ -46,7 +77,15 @@
     }
 
     #brief {
-        padding-top: 4vh;
+        padding-top: 3vh;
         font-size: calc(9px + 2vmin);
+    }
+
+    #first-name {
+        font-size: calc(35px + 1vmin);
+    }
+
+    .angled-brackets {
+        font-size: calc(36px + 2vmin);
     }
 }
