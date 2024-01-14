@@ -30,14 +30,16 @@ const generateIconLinks = (object) => {
 function Footer() {
     return (
         <>
-            <section className="footer-socials">
-                {generateIconLinks(socials)}
-            </section>
-            <section className="copyright-container">
-                <p className="copyright-text">
-                    Copyright &copy; 2023-2024 | Made by Shonasir Alimdjanov
-                </p>
-            </section>
+            <div id="footer-container">
+                <section className="footer-socials">
+                    {generateIconLinks(socials)}
+                </section>
+                <section className="copyright-container">
+                    <p className="copyright-text">
+                        Copyright &copy; 2023-2024 | Made by Shonasir Alimdjanov
+                    </p>
+                </section>
+            </div>
         </>
     );
 }

@@ -10,7 +10,7 @@
 }
 
 #brief {
-    width: 80%;
+    max-width: 1300px;
     padding-top: 3vh;
     font-size: calc(9px + 1.5vmin);
     text-align: center;

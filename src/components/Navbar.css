@@ -1,17 +1,11 @@
-nav {
-    position: fixed;
+#navbar-container {
     top: 0;
-    left: 0;
-    right: 0;
     height: 72px;
-    background-color: var(--primary-background);
-    padding: 15px 50px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--light-content-text);
-    border-bottom: 1px solid var(--accent-color-2);
-    z-index: 1000;
+    z-index: 1001;
 }
 
 nav #home-link {
@@ -58,6 +52,12 @@ nav li {
 
 .line-rotate-up {
     transform: translateY(-10px) rotate(-35deg);
+}
+
+@media screen and (max-width: 1600px) {
+    #navbar-container {
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 680px) {

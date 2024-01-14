@@ -22,6 +22,23 @@ body {
     overflow-x: hidden;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 72px;
+    color: var(--light-content-text);
+    background-color: var(--primary-background);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-color-2);
+    z-index: 1000;
+}
+
 main {
     background: radial-gradient(var(--secondary-background), #0c0d0f);
     width: 100vw;
@@ -48,12 +65,23 @@ a:hover {
     transition: color 0.3s ease;
 }
 
+footer {
+    width: 100vw;
+    background-color: var(--primary-background);
+    border-top: 1px solid var(--accent-color-2);
+    display: flex;
+    justify-content: center;
+}
+
 button {
     margin-top: 5vh;
     color: var(--accent-color-4);
     background-color: var(--primary-background);
     height: 7vh;
+    min-height: 50px;
+    max-height: 100px;
     width: 15vw;
+    max-width: 250px;
     font-size: calc(6px + 2vmin);
     font-weight: bold;
     border: 2px solid var(--pigment-green);
@@ -67,6 +95,14 @@ button:hover {
     background-color: var(--subtle-background);
 }
 
+@media screen and (min-height: 980px) and (min-width: 850px) {
+    main {
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: calc(100vh - 83px);
+    }
+}
+
 @media screen and (max-width: 1050px) {
     button {
         height: 7vh;
@@ -77,7 +113,7 @@ button:hover {
 
 @media screen and (max-width: 500px) {
     button {
-        height: 8vh;
+        height: 5vh;
         width: 30vw;
         font-size: calc(6px + 3vmin);
     }

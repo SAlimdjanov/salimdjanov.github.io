@@ -41,42 +41,44 @@ function Navbar() {
     };
 
     return (
-        <nav className="navbar-container">
-            <Link id="home-link" to="/" onClick={handleLinkClick}>
-                <h1 id="emblem">
-                    <span className="angled-braces">&lt;</span>
-                    <span id="name-initial">S</span>/
-                    <span className="angled-braces">&gt;</span>
-                </h1>
-            </Link>
+        <>
+            <div id="navbar-container">
+                <Link id="home-link" to="/" onClick={handleLinkClick}>
+                    <h1 id="emblem">
+                        <span className="angled-braces">&lt;</span>
+                        <span id="name-initial">S</span>/
+                        <span className="angled-braces">&gt;</span>
+                    </h1>
+                </Link>
 
-            <div
-                className={`hamburger-menu ${
-                    isNavbarHidden ? "" : "menu-selected"
-                }`}
-                onClick={toggleNavbar}
-            >
-                <span
-                    className={`hamburger-lines ${
-                        isNavbarHidden ? "" : "line-rotate-down"
+                <div
+                    className={`hamburger-menu ${
+                        isNavbarHidden ? "" : "menu-selected"
                     }`}
-                ></span>
-                <span
-                    className={`hamburger-lines ${
-                        isNavbarHidden ? "" : "invisible"
-                    }`}
-                ></span>
-                <span
-                    className={`hamburger-lines ${
-                        isNavbarHidden ? "" : "line-rotate-up"
-                    }`}
-                ></span>
+                    onClick={toggleNavbar}
+                >
+                    <span
+                        className={`hamburger-lines ${
+                            isNavbarHidden ? "" : "line-rotate-down"
+                        }`}
+                    ></span>
+                    <span
+                        className={`hamburger-lines ${
+                            isNavbarHidden ? "" : "invisible"
+                        }`}
+                    ></span>
+                    <span
+                        className={`hamburger-lines ${
+                            isNavbarHidden ? "" : "line-rotate-up"
+                        }`}
+                    ></span>
+                </div>
+
+                <ul id="nav-links" className={isNavbarHidden ? "hide" : ""}>
+                    {mapListLinks(componentNames, handleLinkClick)}
+                </ul>
             </div>
-
-            <ul id="nav-links" className={isNavbarHidden ? "hide" : ""}>
-                {mapListLinks(componentNames, handleLinkClick)}
-            </ul>
-        </nav>
+        </>
     );
 }
 

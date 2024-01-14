@@ -14,7 +14,9 @@ function App() {
         <Router>
             <>
                 <header>
-                    <Navbar />
+                    <nav>
+                        <Navbar />
+                    </nav>
                 </header>
                 <main>
                     <Routes>
