@@ -1,30 +1,31 @@
-import placeholder from "../assets/placeholder.jpg";
+import leadflow from "../assets/leadflow-pro.png";
+import luminaBlinds from "../assets/lumina-smart-blinds.png";
+import visualizer from "../assets/visualizer.png";
 
-// Contains placeholder values for now
 const projects = [
     {
-        name: "Restaurant Web App",
-        imgSrc: placeholder,
-        imgAlt: "restaurant-app",
-        description: `A full-stack application powered by Django, that allows a user to view the
-         current menu and book a table with its API`,
-        gitRepo: "https://www.github.com",
+        name: "LeadFlow Pro",
+        imgSrc: leadflow,
+        imgAlt: "leadflow",
+        description: `A full-stack application powered by React and Django. Utilizes REST APIs
+         to maintain records of business leads.`,
+        gitRepo: "https://github.com/SAlimdjanov/LeadFlow",
     },
     {
-        name: "Restaurant Web App",
-        imgSrc: placeholder,
+        name: "SpaceX Launch Visualizer",
+        imgSrc: visualizer,
         imgAlt: "restaurant-app",
-        description: `A full-stack application powered by Django, that allows a user to view the
-         current menu and book a table with its API`,
-        gitRepo: "https://www.github.com",
+        description: `A Plotly Dash Application that visualizes Falcon9 launch outcomes. Utilized
+         NumPy and Pandas for data processing`,
+        gitRepo: "https://github.com/SAlimdjanov/SpaceX-Dash-Visualizer",
     },
     {
-        name: "Restaurant Web App",
-        imgSrc: placeholder,
-        imgAlt: "restaurant-app",
-        description: `A full-stack application powered by Django, that allows a user to view the
-         current menu and book a table with its API`,
-        gitRepo: "https://www.github.com",
+        name: "Lumina Smart Blinds",
+        imgSrc: luminaBlinds,
+        imgAlt: "lumina-smart-blinds",
+        description: `Embedded software for remote controllable, solar power generating blinds.
+         Written in C++ within the Arduino framework.`,
+        gitRepo: "https://github.com/SAlimdjanov/Lumina-Smart-Blinds",
     },
 ];
 

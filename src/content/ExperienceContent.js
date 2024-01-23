@@ -22,10 +22,9 @@ const education = {
          These blinds were remotely controllable and featured mini solar panels on each slat for
          reserve power. I managed the procurement and assembly of the embedded system, including a
          stepper motor, battery system, limit switches, and an ESP32 microcontroller. I also
-         designed the embedded software using the Arduino Framework. My teammates handled structural
-         design, and they developed a web app in JavaScript for remote control. The app communicated
-         with the microcontroller via websockets, allowing users to open, close, and orient the slats
-         for optimal solar charging.`,
+         designed the embedded software. My teammates handled structural design, and developed a web
+         app in JavaScript for remote control. The app communicated with the microcontroller via
+        websockets, allowing users to open, close, and orient the slats for optimal solar charging.`,
     ],
 };
 
@@ -38,13 +37,13 @@ const employment = {
         responsibilities: [
             `Engaged in the design and prototyping phases of an embedded system for a 3-axis
              dispensing robot`,
-            `Developed C++ modules tailored for Arduino-based ESP32 microcontrollers, focusing on
-             robot movement functionalities and seamless integration with Human-Machine Interfaces
-             (HMIs)`,
+            `Developed C/C++ modules for Arduino-based ESP32 microcontrollers, focusing on robot
+             movement functionalities and seamless integration with Human-Machine Interfaces`,
             `Executed debugging activities and crafted unit tests for diverse features, conducting
              comprehensive hardware tests with multiple HMIs`,
-            `Contributed to design reviews led by Engineering Management and collaborated with external
-             firms to validate compliance with project specifications and industry standards`,
+            `Contributed to design reviews led by Engineering Management and collaborated with
+             external firms to validate compliance with project specifications and industry
+             standards`,
         ],
     },
 };

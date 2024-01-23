@@ -14,12 +14,14 @@ const Card = (props) => {
             <div className="image-container">
                 <img className="card-img" src={imgSrc} alt={imgAlt} />
             </div>
-            <div className="item-name">{name}</div>
-            <div className="description">{description}</div>
-            <div className="card-footer">
-                <a href={footerContent} target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} size="1x" /> Repository
-                </a>
+            <div className="card-layout">
+                <div className="item-name">{name}</div>
+                <div className="description">{description}</div>
+                <div className="card-footer">
+                    <a href={footerContent} target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} size="1x" /> Repository
+                    </a>
+                </div>
             </div>
         </article>
     );

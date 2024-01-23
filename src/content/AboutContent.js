@@ -16,18 +16,9 @@ import itemToPath from "../helpers/ConvertToPath";
  * @returns {Object} Object containing text and relevant social links
  */
 const generateMeContent = (socials) => {
-    const projectWork = (
-        <Link to={itemToPath(componentNames, "Projects")}>project work</Link>
-    );
-    const experience = (
-        <Link to={itemToPath(componentNames, "Experience")}>experience</Link>
-    );
+    const projectWork = <Link to={itemToPath(componentNames, "Projects")}>project work</Link>;
+    const experience = <Link to={itemToPath(componentNames, "Experience")}>experience</Link>;
 
-    const twitter = (
-        <a href={socials["twitter"].url} target="_blank" rel="noreferrer">
-            Twitter/X
-        </a>
-    );
     const linkedin = (
         <a href={socials["linkedin"].url} target="_blank" rel="noreferrer">
             LinkedIn
@@ -42,27 +33,18 @@ const generateMeContent = (socials) => {
     const outputElements = {
         background: (
             <>
-                I am a passionate Software Engineer with a diverse skillset that
-                spans frontend and backend technologies. My first {experience}{" "}
-                in the tech industry was a Mechatronics Engineer Intern
-                position, where I designed hardware and software components for
-                embedded systems. Check out my {projectWork} to see what I have
-                been working on recently.
-            </>
-        ),
-        socialEngagement: (
-            <>
-                I enjoy sharing my work and other tech related content on{" "}
-                {twitter} for fellow engineers, developers and tech enthusiasts
-                to see.
+                I am a passionate Software Engineer with a diverse skillset that spans front end and
+                back end technologies. My first {experience} in the tech industry was a Mechatronics
+                Engineering Internship, where I designed hardware and software components for
+                embedded systems. Check out my {projectWork} to see what I have been working on
+                recently.
             </>
         ),
         status: (
             <>
-                I am currently open to opportunities that foster both
-                professional and personal growth. I invite you to reach out via{" "}
-                {email} or {linkedin} if my skills and experiences align with
-                your needs.
+                I am currently open to opportunities that foster professional and personal growth. I
+                invite you to reach out via {email} or {linkedin} if my skills and experience align
+                with your needs.
             </>
         ),
     };
@@ -71,14 +53,17 @@ const generateMeContent = (socials) => {
 };
 
 const skills = {
-    Languages: ["Python", "JavaScript", "SQL", "C++"],
+    Languages: ["Python", "JavaScript", "SQL", "C", "C++"],
     "Tools and Frameworks": [
         "HTML5",
         "CSS3",
-        "React",
+        "React.js",
         "Django",
         "Node.js",
         "Django REST Framework",
+        "Bootstrap",
+        "Docker",
+        "Webpack",
     ],
     "Database Management": ["MySQL", "SQLite"],
     "Version Control": ["Git", "GitHub"],

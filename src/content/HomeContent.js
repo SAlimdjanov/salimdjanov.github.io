@@ -6,9 +6,8 @@
 
 const intro = {
     title: "Software Engineer",
-    brief: `Passionate about developing cutting-edge solutions. I leverage my expertise to design
-    and implement robust software, ensuring optimal functionality and an exceptional user
-    experience.`,
+    brief: `Enthusiastic recent graduate with a strong passion for creating innovative solutions.
+    Committed to ensuring optimal functionality and delivering exceptional user experiences.`,
 };
 
 export default intro;

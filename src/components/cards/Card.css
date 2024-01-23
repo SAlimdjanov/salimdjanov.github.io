@@ -21,6 +21,10 @@
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     overflow: hidden;
+    max-height: 20vh;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
 }
 
 .card-img {
@@ -28,6 +32,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
+}
+
+.card-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
 }
 
 .item-name {
@@ -42,6 +53,13 @@
 
 .card-footer > a:hover {
     color: var(--accent-color-1);
+}
+
+@media screen and (max-width: 1080px) {
+    .card-img {
+        height: 150%;
+        width: 150%;
+    }
 }
 
 @media screen and (max-width: 680px) {

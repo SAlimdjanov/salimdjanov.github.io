@@ -5,11 +5,7 @@
  */
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-    faGithub,
-    faLinkedin,
-    faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const socials = {
     github: {
@@ -23,10 +19,6 @@ const socials = {
     email: {
         icon: faEnvelope,
         url: "mailto: alimdjanov.ss@gmail.com",
-    },
-    twitter: {
-        icon: faTwitter,
-        url: "https://twitter.com/shonasirdev",
     },
 };
 

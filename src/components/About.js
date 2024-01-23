@@ -41,10 +41,7 @@ function generateRows(skillObj, rowStyles, skillCellstyles, skillStyles) {
         tableRows.push(
             <div key={skillKey.concat("-row")} className={rowStyles}>
                 <div key={skillKey}>{skill}</div>
-                <div
-                    key={skillKey.concat("-values")}
-                    className={skillCellstyles}
-                >
+                <div key={skillKey.concat("-values")} className={skillCellstyles}>
                     {mapSkills(skillObj[skill], skillStyles)}
                 </div>
             </div>
@@ -64,18 +61,12 @@ function About() {
                 <article id="me">
                     <h2>About Me</h2>
                     <p>{aboutContent.background}</p>
-                    <p>{aboutContent.socialEngagement}</p>
                     <p>{aboutContent.status}</p>
                 </article>
                 <article id="skills">
                     <h2>My Skills</h2>
                     <div id="skills-container">
-                        {generateRows(
-                            skills,
-                            "skill-row",
-                            "skill-cell",
-                            "skill-style"
-                        )}
+                        {generateRows(skills, "skill-row", "skill-cell", "skill-style")}
                     </div>
                 </article>
             </section>
